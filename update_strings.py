@@ -112,7 +112,7 @@ def strings_from_folder(folder_path, extensions=None):
     localized_strings = {}
     code_file_paths = []
     if extensions == None:
-        extensions = frozenset(['c', 'm', 'mm'])
+        extensions = frozenset(['c', 'm', 'mm', 'swift'])
 
     logging.debug('Scanning for source files in %s', folder_path)
     for dir_path, dir_names, file_names in os.walk(folder_path):
